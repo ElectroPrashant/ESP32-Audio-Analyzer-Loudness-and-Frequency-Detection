@@ -26,7 +26,7 @@ ESP32-Audio-Analyzer/
 ├── combined_analysis/
 │   └── combined_analysis.ino
 ├── README.md
-└── LICENSE
+
 ```
 
 ## 📚 Dependencies
