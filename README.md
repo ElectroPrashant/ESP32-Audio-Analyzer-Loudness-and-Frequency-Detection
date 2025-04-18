@@ -1,6 +1,4 @@
-Certainly! Here's an updated `README.md` for your GitHub repository, incorporating the usage of the I2S and ArduinoFFT libraries, and discussing their roles in noise cancellation applications:
 
----
 
 # 🎙️ ESP32 Audio Analyzer: Loudness & Frequency Detection
 This project demonstrates how to use an ESP32 microcontroller with an I2S microphone (e.g., INMP441) to measure audio loudness and detect dominant frequencies in real-timeBy analyzing audio signals, this setup lays the groundwork for implementing noise cancellation techniques
@@ -35,10 +33,10 @@ ESP32-Audio-Analyzer/
 
 This project relies on the following libraries:
 
-- **[arduinoFFT](https://github.com/kosme/arduinoFFT**: A library for implementing floating point Fast Fourier Transform calculations on the Arduino frameork.
-- **[I2S](https://github.com/arduino/ArduinoCore-samd/tree/master/libraries/I2S**: Enables communication with devices that use the Inter-IC Sound (I2S) protocol, facilitating audio data tranfer
+- **[arduinoFFT](https://github.com/kosme/arduinoFFT**: A library for implementing floating point Fast Fourier Transform calculations on the Arduino frameork.
+- **[I2S](https://github.com/arduino/ArduinoCore-samd/tree/master/libraries/I2S**: Enables communication with devices that use the Inter-IC Sound (I2S) protocol, facilitating audio data tranfer
 
-Ensure these libraries are installed in your Arduino environet. You can use the Arduino Library Manager to install them or place them in the `lib/` directory of this reposiory.
+Ensure these libraries are installed in your Arduino environet. You can use the Arduino Library Manager to install them or place them in the `lib/` directory of this reposiory.
 
 ## 🚀 Getting Started
 
@@ -47,31 +45,24 @@ This project relies on the following libraries:
    git clone https://github.com/yourusername/ESP32-Audio-Analyzer.git
    ```
 
-2. **Set Up the Hardware**:   - Connect the I2S microphone to the SP32:
+2. **Set Up the Hardware**:   - Connect the I2S microphone to the SP32:
      - `VCC` to `3.3V`
      - `GND` to `GND`
      - `SCK` to GPIO14
      - `WS` (Word Select) to GPIO15
      - `SD` (Serial Data) to GPIO32
 
-3. **Upload the Code**:   - Open the desired `.ino` file in the Arduin IDE.   - Select the correct board andport.   - Upload the code to the SP32.
+3. **Upload the Code**:   - Open the desired `.ino` file in the Arduin IDE.  - Select the correct board andport.   - Upload the code to the SP32.
 
-4. **Monitor the Output**:   - Open the Serial Monitor at 115200 baud to view the loudness and frequency reaings.
+4. **Monitor the Output**:   - Open the Serial Monitor at 115200 baud to view the loudness and frequency reaings.
 
 ## 🎯 Application in Noise Cancelltion
 
 By analyzing both the loudness and frequency components of ambient audio, this setup can be extended to implement noise cancellation techiques:
 
-- **Noise Profilng**: Identify and characterize background noise based on its frequency content and ampitude.
-- **Adaptive Filterng**: Design filters that attenuate identified noise frequencies while preserving desired sgnals.
-- **Voice Activity Detection (VD)**: Differentiate between speech and noise to enhance voice recognition sstes.
+- **Noise Profilng**: Identify and characterize background noise based on its frequency content and ampitude.
+- **Adaptive Filterng**: Design filters that attenuate identified noise frequencies while preserving desired sgnals.
+- **Voice Activity Detection (VD)**: Differentiate between speech and noise to enhance voice recognition sstes.
 
-For more advanced noise cancellation, consider integrating algorithms like Acoustic Echo Cancellation (AEC) and Noise Suppression (NS) available in libraries such as Espressif's AFE or third-party DSP libaries.
+For more advanced noise cancellation, consider integrating algorithms like Acoustic Echo Cancellation (AEC) and Noise Suppression (NS) available in libraries such as Espressif's AFE or third-party DSP libaries.
 
-## 📝 Lcense
-
-This project is licensed under the MIT icense.
-
----
-
-Feel free to customize this `README.md` further to suit your project's specifics. If you need assistance with implementing noise cancellation algorithms or integrating additional features, don't hesitate to ask! 
